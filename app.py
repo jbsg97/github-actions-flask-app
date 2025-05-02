@@ -48,5 +48,7 @@ def delete_item(item_id):
     items = [item for item in items if item['id'] != item_id]
     return jsonify({'message': 'Item deleted'}), 200
 
+# New feature: Search 
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

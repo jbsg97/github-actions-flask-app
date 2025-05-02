@@ -31,14 +31,12 @@ on:
     branches: [ "main" ]
 
 env:
-  AWS_REGION: us-east-1                  # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: simple-flask-app           # set this to your Amazon ECR repository name
-  ECS_SERVICE: dev-simple-flask-app                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: dev-simple-flask-app                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
-                                               # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: simple-flask-app           # set this to the name of the container in the
-                                               # containerDefinitions section of your task definition
+  AWS_REGION: us-east-1
+  ECR_REPOSITORY: simple-flask-app
+  ECS_SERVICE: dev-simple-flask-app
+  ECS_CLUSTER: dev-simple-flask-app
+  ECS_TASK_DEFINITION: task-definition.json
+  CONTAINER_NAME: simple-flask-app
 
 permissions:
   contents: read

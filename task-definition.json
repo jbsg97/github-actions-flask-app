@@ -1,5 +1,5 @@
 {
-    "family": "flask-api",
+    "family": "dev-simple-flask-app",
     "containerDefinitions": [
         {
             "name": "simple-flask-app",

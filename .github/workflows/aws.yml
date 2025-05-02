@@ -33,7 +33,7 @@ on:
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: simple-flask-app
-  ECS_SERVICE: dev-simple-flask-app
+  ECS_SERVICE: dev-simple-flask-app-service-gwrqujxz
   ECS_CLUSTER: dev-simple-flask-app
   ECS_TASK_DEFINITION: task-definition.json
   CONTAINER_NAME: simple-flask-app
